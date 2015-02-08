@@ -29,9 +29,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:numato_kicad_lib
 LIBS:SP6N02RTL8211EGigabitEthernetExpansionModule-cache
-EELAYER 27 0
+LIBS:pmod
+EELAYER 25 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
@@ -45,42 +45,6 @@ Comment2 "License: CC BY-SA"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 5400 8100 0    60   ~ 0
-GND
-Text Label 3650 2050 0    60   ~ 0
-VCC3V3
-NoConn ~ 6400 2350
-NoConn ~ 6400 2650
-NoConn ~ 6400 2950
-NoConn ~ 6400 3450
-NoConn ~ 6400 3550
-$Comp
-L GND #PWR01
-U 1 1 53A36C4F
-P 5400 8250
-F 0 "#PWR01" H 5400 8250 30  0001 C CNN
-F 1 "GND" H 5400 8180 30  0001 C CNN
-F 2 "" H 5400 8250 60  0000 C CNN
-F 3 "" H 5400 8250 60  0000 C CNN
-	1    5400 8250
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6400 4450
-NoConn ~ 6400 4350
-NoConn ~ 6400 4150
-NoConn ~ 6400 4050
-NoConn ~ 6400 3850
-NoConn ~ 6400 3750
-NoConn ~ 6400 2150
-NoConn ~ 6400 2050
-NoConn ~ 6400 3250
-NoConn ~ 6400 3150
-NoConn ~ 6400 3050
-NoConn ~ 6400 2750
-NoConn ~ 6400 2450
-NoConn ~ 4400 5350
-NoConn ~ 6400 7650
-NoConn ~ 6400 5550
 $Comp
 L C C18
 U 1 1 53B55C4F
@@ -146,36 +110,28 @@ Text Label 18200 4500 2    47   ~ 0
 GND
 Text Label 13900 11500 2    60   ~ 0
 GND
-Text Label 7250 4950 2    39   ~ 0
+Text Label 6750 5450 2    39   ~ 0
 ETH_TXD0
-Text Label 7250 5050 2    39   ~ 0
+Text Label 6750 5550 2    39   ~ 0
 ETH_TXD1
-Text Label 7250 5250 2    39   ~ 0
+Text Label 6750 5650 2    39   ~ 0
 ETH_TXD2
-Text Label 7250 5350 2    39   ~ 0
+Text Label 6750 5750 2    39   ~ 0
 ETH_TXD3
-Text Label 3550 4050 0    39   ~ 0
+Text Label 6750 4050 2    39   ~ 0
 ETH_RXD0
-Text Label 3550 4150 0    39   ~ 0
+Text Label 6750 4150 2    39   ~ 0
 ETH_RXD1
-Text Label 3550 4350 0    39   ~ 0
+Text Label 6750 4250 2    39   ~ 0
 ETH_RXD2
-Text Label 3550 4450 0    39   ~ 0
+Text Label 6750 4350 2    39   ~ 0
 ETH_RXD3
-Text Label 7250 4750 2    39   ~ 0
+Text Label 6750 4750 2    39   ~ 0
 ETH_TXCLK
 Text Label 14000 10550 2    39   ~ 0
 XTAL1_50MHZ
 Text Label 12450 10550 0    39   ~ 0
 XTAL2_50MHZ
-NoConn ~ 4400 7450
-NoConn ~ 4400 7350
-NoConn ~ 4400 7150
-NoConn ~ 4400 7050
-NoConn ~ 4400 6850
-NoConn ~ 4400 6750
-NoConn ~ 4400 7650
-NoConn ~ 4400 7750
 Text Label 17750 5500 2    47   ~ 0
 LED0
 Text Label 17850 3950 2    47   ~ 0
@@ -217,31 +173,16 @@ F 3 "~" H 13250 10550 60  0000 C CNN
 	1    13250 10550
 	1    0    0    -1  
 $EndComp
-Text Label 7250 6550 2    39   ~ 0
+Text Label 8400 3700 2    39   ~ 0
 ETH_RESET_B
-Text Label 7250 7150 2    39   ~ 0
+Text Label 8400 3100 2    39   ~ 0
 ETH_MDC
-Text Label 7250 7350 2    39   ~ 0
+Text Label 8400 3200 2    39   ~ 0
 ETH_MDIO
-Text Label 7250 7050 2    39   ~ 0
+Text Label 7050 4950 2    39   ~ 0
 ETH_INT_B
-Text Label 7250 4650 2    39   ~ 0
+Text Label 6750 3450 2    39   ~ 0
 ETH_RXCLK
-NoConn ~ 6400 5650
-NoConn ~ 4400 6150
-NoConn ~ 4400 6250
-$Comp
-L HIROSE_120PIN P1
-U 1 1 53A2CD54
-P 5400 4850
-F 0 "P1" H 5450 4650 60  0000 C CNN
-F 1 "HIROSE_120PIN" H 5400 1700 50  0000 C CNN
-F 2 "~" H 5400 5050 60  0000 C CNN
-F 3 "~" H 5400 5050 60  0000 C CNN
-	1    5400 4850
-	-1   0    0    -1  
-$EndComp
-NoConn ~ 6400 6150
 $Comp
 L R R23
 U 1 1 53CC9E82
@@ -327,18 +268,10 @@ Text Label 16300 10300 0    47   ~ 0
 VCC3V3
 Text Label 18150 11000 0    47   ~ 0
 VCC3V3
-Text Label 3550 3450 0    39   ~ 0
+Text Label 8400 3350 2    39   ~ 0
 MAC_SCL
-Text Label 3550 3550 0    39   ~ 0
+Text Label 8400 3450 2    39   ~ 0
 MAC_SDA
-NoConn ~ 4400 2950
-NoConn ~ 4400 2850
-NoConn ~ 4400 5850
-NoConn ~ 4400 5250
-NoConn ~ 4400 5050
-NoConn ~ 4400 4950
-NoConn ~ 4400 5950
-NoConn ~ 6400 6250
 $Comp
 L RTL8211E-VL U3
 U 1 1 5475675F
@@ -838,185 +771,33 @@ F 3 "~" H 11000 4650 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6400 1950 6650 1950
+	6200 5050 7050 5050
 Wire Wire Line
-	6650 1950 6650 8100
-Wire Wire Line
-	6650 3650 6400 3650
-Connection ~ 6650 3350
-Wire Wire Line
-	6650 3950 6400 3950
-Connection ~ 6650 3650
-Wire Wire Line
-	6650 4250 6400 4250
-Connection ~ 6650 3950
-Wire Wire Line
-	6650 4550 6400 4550
-Connection ~ 6650 4250
-Wire Wire Line
-	6650 4850 6400 4850
-Connection ~ 6650 4550
-Wire Wire Line
-	6650 5150 6400 5150
-Connection ~ 6650 4850
-Wire Wire Line
-	6650 5450 6400 5450
-Connection ~ 6650 5150
-Wire Wire Line
-	6650 5750 6400 5750
-Connection ~ 6650 5450
-Wire Wire Line
-	6650 6050 6400 6050
-Connection ~ 6650 5750
-Wire Wire Line
-	6650 6350 6400 6350
-Connection ~ 6650 6050
-Wire Wire Line
-	6650 6650 6400 6650
-Connection ~ 6650 6350
-Wire Wire Line
-	6650 6950 6400 6950
-Connection ~ 6650 6650
-Wire Wire Line
-	6650 7250 6400 7250
-Connection ~ 6650 6950
-Wire Wire Line
-	6650 7550 6400 7550
-Connection ~ 6650 7250
-Wire Wire Line
-	6650 7850 6400 7850
-Connection ~ 6650 7550
-Wire Wire Line
-	4400 3650 4000 3650
-Wire Wire Line
-	4000 1950 4000 8100
-Wire Wire Line
-	4000 3350 4400 3350
-Wire Wire Line
-	4000 3950 4400 3950
-Connection ~ 4000 3650
-Wire Wire Line
-	4000 4250 4400 4250
-Connection ~ 4000 3950
-Wire Wire Line
-	4000 4550 4400 4550
-Connection ~ 4000 4250
-Wire Wire Line
-	4000 4850 4400 4850
-Connection ~ 4000 4550
-Wire Wire Line
-	4000 5150 4400 5150
-Connection ~ 4000 4850
-Wire Wire Line
-	4000 5450 4400 5450
-Connection ~ 4000 5150
-Wire Wire Line
-	4000 5750 4400 5750
-Connection ~ 4000 5450
-Wire Wire Line
-	4000 6050 4400 6050
-Connection ~ 4000 5750
-Wire Wire Line
-	4000 6350 4400 6350
-Connection ~ 4000 6050
-Wire Wire Line
-	4000 6650 4400 6650
-Connection ~ 4000 6350
-Wire Wire Line
-	4000 6950 4400 6950
-Connection ~ 4000 6650
-Wire Wire Line
-	4000 7250 4400 7250
-Connection ~ 4000 6950
-Wire Wire Line
-	4000 7550 4400 7550
-Connection ~ 4000 7250
-Wire Wire Line
-	4000 7850 4400 7850
-Connection ~ 4000 7550
-Connection ~ 4000 3350
-Wire Wire Line
-	4400 1950 4000 1950
-Wire Wire Line
-	4400 5550 3550 5550
-Wire Wire Line
-	7250 4650 6400 4650
-Connection ~ 6650 7850
-Connection ~ 4000 7850
-Wire Wire Line
-	5400 8100 5400 8250
-Wire Wire Line
-	4000 8100 6650 8100
-Connection ~ 5400 8100
-Wire Wire Line
-	3650 2050 4400 2050
-Wire Wire Line
-	4300 2050 4300 2150
-Wire Wire Line
-	4300 2150 4400 2150
-Connection ~ 4300 2050
-Wire Notes Line
-	6100 4450 6000 4450
-Wire Notes Line
-	6000 4450 6000 3450
-Wire Notes Line
-	6000 3450 6100 3450
-Wire Notes Line
-	4700 7750 4800 7750
-Wire Notes Line
-	4800 7750 4800 6750
-Wire Notes Line
-	4800 6750 4700 6750
-Wire Wire Line
-	4400 3050 4000 3050
-Connection ~ 4000 3050
-Wire Wire Line
-	4400 3150 4000 3150
-Connection ~ 4000 3150
-Wire Wire Line
-	4400 3250 4000 3250
-Connection ~ 4000 3250
-Wire Wire Line
-	4400 2450 4000 2450
-Connection ~ 4000 2450
-Wire Wire Line
-	4400 2750 4000 2750
-Connection ~ 4000 2750
-Wire Wire Line
-	6400 3350 6650 3350
-Wire Wire Line
-	6400 2850 6650 2850
-Connection ~ 6650 2850
-Wire Wire Line
-	6400 2550 6650 2550
-Connection ~ 6650 2550
-Wire Wire Line
-	6400 2250 6650 2250
-Connection ~ 6650 2250
+	6750 3450 5900 3450
 Wire Wire Line
 	17050 5350 17050 5200
 Wire Wire Line
 	17950 4600 17900 4600
 Wire Wire Line
-	4400 4450 3550 4450
+	5900 4350 6750 4350
 Wire Wire Line
-	4400 4350 3550 4350
+	5900 4250 6750 4250
 Wire Wire Line
-	4400 4150 3550 4150
+	5900 4150 6750 4150
 Wire Wire Line
-	4400 4050 3550 4050
+	5900 4050 6750 4050
 Wire Wire Line
-	6400 5350 7250 5350
+	5900 5750 6750 5750
 Wire Wire Line
-	6400 5250 7250 5250
+	5900 5650 6750 5650
 Wire Wire Line
-	4400 3450 3550 3450
+	7550 3350 8400 3350
 Wire Wire Line
-	4400 3550 3550 3550
+	7550 3450 8400 3450
 Wire Wire Line
-	6400 6550 7250 6550
+	7550 3700 8400 3700
 Wire Wire Line
-	6400 7350 7250 7350
+	7550 3200 8400 3200
 Wire Wire Line
 	17650 5200 17650 5400
 Wire Wire Line
@@ -1053,7 +834,7 @@ Wire Wire Line
 Connection ~ 12850 10550
 Connection ~ 13700 10550
 Wire Wire Line
-	6400 4750 7250 4750
+	5900 4750 6750 4750
 Connection ~ 18150 11100
 Wire Wire Line
 	18150 11000 18150 11200
@@ -1083,9 +864,9 @@ Wire Wire Line
 Wire Wire Line
 	16600 11500 16600 11650
 Wire Wire Line
-	6400 7150 7250 7150
+	7550 3100 8400 3100
 Wire Wire Line
-	6400 7050 7250 7050
+	6200 4950 7050 4950
 Wire Wire Line
 	16850 5350 17050 5350
 Wire Wire Line
@@ -1636,7 +1417,7 @@ Connection ~ 4500 10850
 Text Label 4100 10850 0    60   ~ 0
 VCC3V3
 Wire Wire Line
-	4100 10850 5300 10850
+	4000 10850 5300 10850
 $Comp
 L C C1
 U 1 1 54773CC0
@@ -1673,37 +1454,24 @@ Text Notes 5000 9450 0    118  ~ 24
 VCC1V0
 Text Notes 15850 10000 0    118  ~ 24
 ETH MAC ADDRESS
-NoConn ~ 4400 4750
-NoConn ~ 4400 4650
-NoConn ~ 4400 3750
-Text Label 3550 3850 0    39   ~ 0
+Text Label 6750 3350 2    39   ~ 0
 ETH_RXCTL
 Wire Wire Line
-	3550 3850 4400 3850
-NoConn ~ 6400 5850
-NoConn ~ 6400 5950
-NoConn ~ 4400 6550
-NoConn ~ 4400 6450
-Text Label 7250 6450 2    39   ~ 0
+	6750 3350 5900 3350
+Text Label 6750 4850 2    39   ~ 0
 ETH_TXCTL
 Wire Wire Line
-	6400 5050 7250 5050
+	5900 5550 6750 5550
 Wire Wire Line
-	6400 4950 7250 4950
-NoConn ~ 6400 6750
-NoConn ~ 6400 6850
-NoConn ~ 4400 2650
-NoConn ~ 4400 2550
-NoConn ~ 4400 2350
-NoConn ~ 4400 2250
+	5900 5450 6750 5450
 Wire Wire Line
 	15800 11500 16600 11500
 Wire Wire Line
 	16600 10300 16600 10500
-Text Label 3550 5550 0    39   ~ 0
+Text Label 7050 5050 2    39   ~ 0
 SYSCLK
 Wire Wire Line
-	6400 6450 7250 6450
+	5900 4850 6750 4850
 Text Label 6800 11450 2    60   ~ 0
 GND
 Connection ~ 6550 11450
@@ -1777,8 +1545,8 @@ $EndComp
 Wire Wire Line
 	17150 5500 17150 5200
 Wire Wire Line
-	4400 5650 3550 5650
-Text Label 3550 5650 0    39   ~ 0
+	8450 5650 9300 5650
+Text Label 9300 5650 2    39   ~ 0
 FPGA_CLK
 Text Label 14800 10550 2    39   ~ 0
 FPGA_CLK
@@ -1795,6 +1563,101 @@ F 3 "~" H 14250 10550 30  0000 C CNN
 $EndComp
 Wire Wire Line
 	14800 10550 14500 10550
-NoConn ~ 6400 7450
-NoConn ~ 6400 7750
+$Comp
+L PMOD-Device-x2-Type-1A-GPIO PMODD?
+U 1 1 54D74470
+P 5750 3900
+F 0 "PMODD?" H 5650 3850 50  0000 C CNN
+F 1 "PMOD-Device-x2-Type-1A-GPIO" V 5450 3850 50  0001 C CNN
+F 2 "" H 5700 4200 60  0000 C CNN
+F 3 "" H 5700 4200 60  0000 C CNN
+	1    5750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L PMOD-Device-x2-Type-1A-GPIO PMODD?
+U 1 1 54D744F9
+P 5750 5300
+F 0 "PMODD?" H 5650 5250 50  0000 C CNN
+F 1 "PMOD-Device-x2-Type-1A-GPIO" V 5450 5250 50  0001 C CNN
+F 2 "" H 5700 5600 60  0000 C CNN
+F 3 "" H 5700 5600 60  0000 C CNN
+	1    5750 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5850 6000 5850
+Wire Wire Line
+	6000 3750 6000 6050
+Wire Wire Line
+	6000 5150 5900 5150
+Connection ~ 6000 5850
+Wire Wire Line
+	6000 4450 5900 4450
+Connection ~ 6000 5150
+Wire Wire Line
+	6000 3750 5900 3750
+Connection ~ 6000 4450
+Wire Wire Line
+	5900 5950 6100 5950
+Wire Wire Line
+	6100 5950 6100 3200
+Wire Wire Line
+	5900 3850 6100 3850
+Connection ~ 6100 3850
+Wire Wire Line
+	5900 4550 6100 4550
+Connection ~ 6100 4550
+Wire Wire Line
+	5900 5250 6100 5250
+Connection ~ 6100 5250
+$Comp
+L GND #PWR?
+U 1 1 54D76945
+P 6000 6050
+F 0 "#PWR?" H 6000 6050 30  0001 C CNN
+F 1 "GND" H 6000 5980 30  0001 C CNN
+F 2 "" H 6000 6050 60  0000 C CNN
+F 3 "" H 6000 6050 60  0000 C CNN
+	1    6000 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR?
+U 1 1 54D76D89
+P 4000 10800
+F 0 "#PWR?" H 4000 10900 40  0001 C CNN
+F 1 "3V3" H 4000 10925 40  0000 C CNN
+F 2 "" H 4000 10800 60  0000 C CNN
+F 3 "" H 4000 10800 60  0000 C CNN
+	1    4000 10800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 10850 4000 10800
+$Comp
+L 3V3 #PWR?
+U 1 1 54D76F77
+P 6100 3200
+F 0 "#PWR?" H 6100 3300 40  0001 C CNN
+F 1 "3V3" H 6100 3325 40  0000 C CNN
+F 2 "" H 6100 3200 60  0000 C CNN
+F 3 "" H 6100 3200 60  0000 C CNN
+	1    6100 3200
+	1    0    0    -1  
+$EndComp
+Text Label 6100 3250 2    60   ~ 0
+VCC3V3
+Wire Wire Line
+	5900 3550 6750 3550
+Wire Wire Line
+	5900 3650 6750 3650
+Text Label 6450 3550 0    39   ~ 0
+SDA
+Text Label 6450 3650 0    39   ~ 0
+SCK
+Text Notes 7550 3800 0    60   ~ 0
+Hold SCK down for X ns to start a reset.
+Text Notes 7550 2950 0    60   ~ 0
+Need way to share SDA/SCK\nbetween \n * ETH_MDIO/ETH_MDC and \n * MAC_SDA/MAC_SCL
 $EndSCHEMATC

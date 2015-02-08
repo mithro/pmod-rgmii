@@ -29,14 +29,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:SP6N02RTL8211EGigabitEthernetExpansionModule-cache
+LIBS:pmod-rgmii-RTL8211E-module-cache
 LIBS:pmod
 EELAYER 25 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
-Title "SP6N02 RTL8211E Gigabit Ethernet Module"
+Title "PMOD Gigabit Ethernet Expansion Module (RGMII based on RTL8211E)"
 Date "23 dec 2014"
 Rev ""
 Comp "Numato Lab"

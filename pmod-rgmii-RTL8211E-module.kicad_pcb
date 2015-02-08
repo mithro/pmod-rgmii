@@ -14,7 +14,7 @@
 
   (page A4)
   (title_block 
-    (title "SP6N02 Gigabit Ethernet Expansion Module")
+    (title "PMOD Gigabit Ethernet Expansion Module (RGMII based on RTL8211E)")
     (rev 1)
     (company "Numato Lab")
     (comment 1 http://www.numato.com)

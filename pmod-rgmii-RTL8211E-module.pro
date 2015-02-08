@@ -74,5 +74,5 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=SP6N02RTL8211EGigabitEthernetExpansionModule-cache
+LibName31=pmod-rgmii-RTL8211E-module-cache
 LibName32=kicad-pmod/pmod
